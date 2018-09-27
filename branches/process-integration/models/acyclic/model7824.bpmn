@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<definitions id="oryx_01f99c14-77a4-44a8-895f-afe3a07becd8" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.omg.org/bpmn20" xmlns="http://schema.omg.org/spec/BPMN/2.0" xmlns:bpmndi="http://bpmndi.org">
+    <process id="oryx_cb73ca28-0d4d-4cf7-bafe-a468b76b23c7">
+        <laneSet id="oryx_7bad729a-68e4-4aa2-90d0-4b5648bd25cc">
+            <lane name="DefaultLane" id="oryx_39cacb0e-b792-499e-8768-d3d46aee8a28">
+                <flowElementRef>oryx_0E322CB6-A934-4D60-9209-4D4FD0291249</flowElementRef>
+                <flowElementRef>oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1</flowElementRef>
+                <flowElementRef>oryx_B9B8FBAB-1366-40A4-B47A-19F462187747</flowElementRef>
+                <flowElementRef>oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B</flowElementRef>
+                <flowElementRef>oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A</flowElementRef>
+                <flowElementRef>oryx_559FC390-9384-4A5E-B685-49F49342B9E9</flowElementRef>
+                <flowElementRef>oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E</flowElementRef>
+                <flowElementRef>oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C</flowElementRef>
+                <flowElementRef>oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2</flowElementRef>
+                <flowElementRef>oryx_CC341D31-DC96-4496-A069-CD053AD30B4F</flowElementRef>
+                <flowElementRef>oryx_6969DA3F-3A78-47D1-977B-7160973A776E</flowElementRef>
+                <flowElementRef>oryx_0B2A4C19-415E-4656-91B8-F3FFF3FB09B4</flowElementRef>
+            </lane>
+        </laneSet>
+        <task name="I" id="oryx_0E322CB6-A934-4D60-9209-4D4FD0291249"/>
+        <exclusiveGateway gatewayDirection="diverging" name="a" id="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1"/>
+        <task name="A" id="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747"/>
+        <parallelGateway gatewayDirection="diverging" name="b" id="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B"/>
+        <exclusiveGateway gatewayDirection="converging" name="d" id="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A"/>
+        <parallelGateway gatewayDirection="diverging" name="c" id="oryx_559FC390-9384-4A5E-B685-49F49342B9E9"/>
+        <task name="B" id="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E"/>
+        <exclusiveGateway gatewayDirection="converging" name="e" id="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C"/>
+        <task name="D" id="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2"/>
+        <parallelGateway gatewayDirection="converging" name="f" id="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F"/>
+        <task name="C" id="oryx_6969DA3F-3A78-47D1-977B-7160973A776E"/>
+        <task name="O" id="oryx_0B2A4C19-415E-4656-91B8-F3FFF3FB09B4"/>
+        <sequenceFlow targetRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1" sourceRef="oryx_0E322CB6-A934-4D60-9209-4D4FD0291249" name="" id="oryx_CEA1845A-FAE2-434A-A239-E46E6D4420FA"/>
+        <sequenceFlow targetRef="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747" sourceRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1" name="" id="oryx_3D81E38E-FA43-489B-BCDB-180223B95F29"/>
+        <sequenceFlow targetRef="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E" sourceRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1" name="" id="oryx_1E9AC4FF-4E20-4A99-8580-9DE5BA3A11BF"/>
+        <sequenceFlow targetRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B" sourceRef="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747" name="" id="oryx_FC2BDCFE-9546-414F-B7AC-97798053A5E4"/>
+        <sequenceFlow targetRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9" sourceRef="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E" name="" id="oryx_3A8C7DF7-6078-4EFC-8242-9ACEB4955F48"/>
+        <sequenceFlow targetRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A" sourceRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B" name="" id="oryx_33788165-D78F-4583-8B5C-9129A659166B"/>
+        <sequenceFlow targetRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C" sourceRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9" name="" id="oryx_36331697-5FE7-41BF-A276-2B45EE73AF48"/>
+        <sequenceFlow targetRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C" sourceRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B" name="" id="oryx_3AF4AFFA-A583-47DD-AC13-E28FBCE09CD9"/>
+        <sequenceFlow targetRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A" sourceRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9" name="" id="oryx_6E4DB0CA-0CC2-44D4-8B37-4F8582C87202"/>
+        <sequenceFlow targetRef="oryx_6969DA3F-3A78-47D1-977B-7160973A776E" sourceRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A" name="" id="oryx_ED79ACD5-269F-4489-90C5-FAF94F63A875"/>
+        <sequenceFlow targetRef="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2" sourceRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C" name="" id="oryx_C4A44972-D999-416F-9678-3117110CF32F"/>
+        <sequenceFlow targetRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F" sourceRef="oryx_6969DA3F-3A78-47D1-977B-7160973A776E" name="" id="oryx_B58EDECA-E636-4844-8002-A8C64A78CB1E"/>
+        <sequenceFlow targetRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F" sourceRef="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2" name="" id="oryx_E8C0485E-20C6-49F6-A9D9-7F88C0134891"/>
+        <sequenceFlow targetRef="oryx_0B2A4C19-415E-4656-91B8-F3FFF3FB09B4" sourceRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F" name="" id="oryx_898E1754-5C92-4162-BEDB-19828096F350"/>
+    </process>
+    <bpmndi:processDiagram processRef="oryx_cb73ca28-0d4d-4cf7-bafe-a468b76b23c7" id="oryx_cb73ca28-0d4d-4cf7-bafe-a468b76b23c7_gui">
+        <bpmndi:laneCompartment isVisible="false" height="0.0" width="0.0" y="0.0" x="0.0" name="DefaultLane" id="oryx_39cacb0e-b792-499e-8768-d3d46aee8a28_gui">
+            <bpmndi:activityShape activityRef="oryx_0E322CB6-A934-4D60-9209-4D4FD0291249" height="80.0" width="100.0" y="285.0" x="150.0" name="I" id="oryx_0E322CB6-A934-4D60-9209-4D4FD0291249_gui"/>
+            <bpmndi:gatewayShape gatewayRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1" height="40.0" width="40.0" y="305.0" x="295.0" name="a" id="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1_gui"/>
+            <bpmndi:activityShape activityRef="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747" height="80.0" width="100.0" y="165.0" x="345.0" name="A" id="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747_gui"/>
+            <bpmndi:gatewayShape gatewayRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B" height="40.0" width="40.0" y="185.0" x="490.0" name="b" id="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B_gui"/>
+            <bpmndi:gatewayShape gatewayRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A" height="40.0" width="40.0" y="185.0" x="575.0" name="d" id="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A_gui"/>
+            <bpmndi:gatewayShape gatewayRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9" height="40.0" width="40.0" y="425.0" x="498.0" name="c" id="oryx_559FC390-9384-4A5E-B685-49F49342B9E9_gui"/>
+            <bpmndi:activityShape activityRef="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E" height="80.0" width="100.0" y="405.0" x="353.0" name="B" id="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E_gui"/>
+            <bpmndi:gatewayShape gatewayRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C" height="40.0" width="40.0" y="425.0" x="583.0" name="e" id="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C_gui"/>
+            <bpmndi:activityShape activityRef="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2" height="80.0" width="100.0" y="405.0" x="668.0" name="D" id="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2_gui"/>
+            <bpmndi:gatewayShape gatewayRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F" height="40.0" width="40.0" y="305.0" x="765.0" name="f" id="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F_gui"/>
+            <bpmndi:activityShape activityRef="oryx_6969DA3F-3A78-47D1-977B-7160973A776E" height="80.0" width="100.0" y="165.0" x="660.0" name="C" id="oryx_6969DA3F-3A78-47D1-977B-7160973A776E_gui"/>
+            <bpmndi:activityShape activityRef="oryx_0B2A4C19-415E-4656-91B8-F3FFF3FB09B4" height="80.0" width="100.0" y="285.0" x="850.0" name="O" id="oryx_0B2A4C19-415E-4656-91B8-F3FFF3FB09B4_gui"/>
+        </bpmndi:laneCompartment>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_CEA1845A-FAE2-434A-A239-E46E6D4420FA" label="" targetRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1_gui" sourceRef="oryx_0E322CB6-A934-4D60-9209-4D4FD0291249_gui" id="oryx_CEA1845A-FAE2-434A-A239-E46E6D4420FA_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_3D81E38E-FA43-489B-BCDB-180223B95F29" label="" targetRef="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747_gui" sourceRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1_gui" id="oryx_3D81E38E-FA43-489B-BCDB-180223B95F29_gui">
+            <bpmndi:bendpoint y="205.0" x="315.5"/>
+        </bpmndi:sequenceFlowConnector>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_1E9AC4FF-4E20-4A99-8580-9DE5BA3A11BF" label="" targetRef="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E_gui" sourceRef="oryx_F7F9C97A-4FA3-4341-B291-B02318FC64A1_gui" id="oryx_1E9AC4FF-4E20-4A99-8580-9DE5BA3A11BF_gui">
+            <bpmndi:bendpoint y="445.0" x="315.5"/>
+        </bpmndi:sequenceFlowConnector>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_FC2BDCFE-9546-414F-B7AC-97798053A5E4" label="" targetRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B_gui" sourceRef="oryx_B9B8FBAB-1366-40A4-B47A-19F462187747_gui" id="oryx_FC2BDCFE-9546-414F-B7AC-97798053A5E4_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_3A8C7DF7-6078-4EFC-8242-9ACEB4955F48" label="" targetRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9_gui" sourceRef="oryx_21BB6556-CD4E-4514-BB6E-B28AE013A71E_gui" id="oryx_3A8C7DF7-6078-4EFC-8242-9ACEB4955F48_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_33788165-D78F-4583-8B5C-9129A659166B" label="" targetRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A_gui" sourceRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B_gui" id="oryx_33788165-D78F-4583-8B5C-9129A659166B_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_36331697-5FE7-41BF-A276-2B45EE73AF48" label="" targetRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C_gui" sourceRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9_gui" id="oryx_36331697-5FE7-41BF-A276-2B45EE73AF48_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_3AF4AFFA-A583-47DD-AC13-E28FBCE09CD9" label="" targetRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C_gui" sourceRef="oryx_7D483D88-CCB7-4DE0-BA44-6DC0471CCF5B_gui" id="oryx_3AF4AFFA-A583-47DD-AC13-E28FBCE09CD9_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_6E4DB0CA-0CC2-44D4-8B37-4F8582C87202" label="" targetRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A_gui" sourceRef="oryx_559FC390-9384-4A5E-B685-49F49342B9E9_gui" id="oryx_6E4DB0CA-0CC2-44D4-8B37-4F8582C87202_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_ED79ACD5-269F-4489-90C5-FAF94F63A875" label="" targetRef="oryx_6969DA3F-3A78-47D1-977B-7160973A776E_gui" sourceRef="oryx_C47E73EF-FB9D-449A-8974-F26A845D9C8A_gui" id="oryx_ED79ACD5-269F-4489-90C5-FAF94F63A875_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_C4A44972-D999-416F-9678-3117110CF32F" label="" targetRef="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2_gui" sourceRef="oryx_DBABDAF8-F236-4D3E-B7E1-A838D0462D5C_gui" id="oryx_C4A44972-D999-416F-9678-3117110CF32F_gui"/>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_B58EDECA-E636-4844-8002-A8C64A78CB1E" label="" targetRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F_gui" sourceRef="oryx_6969DA3F-3A78-47D1-977B-7160973A776E_gui" id="oryx_B58EDECA-E636-4844-8002-A8C64A78CB1E_gui">
+            <bpmndi:bendpoint y="205.0" x="785.5"/>
+        </bpmndi:sequenceFlowConnector>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_E8C0485E-20C6-49F6-A9D9-7F88C0134891" label="" targetRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F_gui" sourceRef="oryx_CBE98CF9-05EE-450A-A293-8B65B65117E2_gui" id="oryx_E8C0485E-20C6-49F6-A9D9-7F88C0134891_gui">
+            <bpmndi:bendpoint y="445.0" x="785.0"/>
+        </bpmndi:sequenceFlowConnector>
+        <bpmndi:sequenceFlowConnector sequenceFlowRef="oryx_898E1754-5C92-4162-BEDB-19828096F350" label="" targetRef="oryx_0B2A4C19-415E-4656-91B8-F3FFF3FB09B4_gui" sourceRef="oryx_CC341D31-DC96-4496-A069-CD053AD30B4F_gui" id="oryx_898E1754-5C92-4162-BEDB-19828096F350_gui"/>
+    </bpmndi:processDiagram>
+</definitions>

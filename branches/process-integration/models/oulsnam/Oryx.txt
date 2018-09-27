@@ -1,0 +1,6 @@
+DL - http://oryx-project.org/oryx/editor;bpmn2.0#/model/11437
+BL - http://oryx-project.org/oryx/editor;bpmn2.0#/model/11438
+LL - http://oryx-project.org/oryx/editor;bpmn2.0#/model/11439
+LB - http://oryx-project.org/oryx/editor;bpmn2.0#/model/11440
+LD - http://oryx-project.org/oryx/editor;bpmn2.0#/model/11441
+DD - http://oryx-project.org/oryx/editor;bpmn2.0#/model/11442

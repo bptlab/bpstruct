@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="lib/antlr-runtime-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/args4j-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/jbpt-0.2.77.jar"/>
+	<classpathentry kind="lib" path="lib/jdom.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht-jdk1.6.jar"/>
+	<classpathentry kind="lib" path="lib/org.json.jar"/>
+	<classpathentry kind="lib" path="lib/pnapi-java.jar"/>
+	<classpathentry kind="lib" path="lib/rpst2.jar"/>
+	<classpathentry kind="lib" path="lib/stixar-graphlib-988-beta.jar"/>
+	<classpathentry kind="lib" path="lib/stixar-util-950-beta.jar"/>
+	<classpathentry kind="lib" path="lib/uma-1.2.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="BPStructWS" default="war" basedir=".">
+	
+	<!-- Load additional properties -->
+	<property file="build.properties"/>
+
+	<property name="web.content" value="web"/>
+	<property name="dist.dir" value="dist"/>
+	<property name="src.dir" value="src"/>
+	<property name="lib.dir" value="lib"/>
+	<!-- build dirs -->
+	<property name="build.dir" value="build"/>
+	<property name="web-inf.root" value="${build.dir}\WEB-INF"/>
+	<property name="web-inf.classes" value="${web-inf.root}\classes"/>		
+	<property name="web-inf.lib" value="${web-inf.root}\lib"/>
+    
+	<!-- empties "build" and "dist" directory -->
+	<target name="clean">
+		<echo>Cleaning directory build</echo>
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+	</target>
+	
+	<!-- creates directories and copy content -->
+	<target name="init" depends="clean">
+		<echo>Init build directory</echo>
+		<copy todir="${build.dir}">
+			<fileset dir="${web.content}"/>			
+		</copy>
+		<mkdir dir="${web-inf.classes}"/>
+		<mkdir dir="${dist.dir}" />
+		<copy todir="${web-inf.lib}">
+			<fileset dir="${lib.dir}">
+		    	<include name="*.jar" />
+		    </fileset>
+		</copy>
+	</target>
+	
+	<!-- builds the the servlet class files --> 
+	<target name="build" depends="init">
+		<echo>Building class files</echo>
+		<javac srcdir="${src.dir}" destdir="${web-inf.classes}" includeantruntime="false" debug="on">
+			 <classpath>
+			 	<fileset dir="${lib.dir}">
+ 			    	<include name="*.jar" />
+ 			    </fileset>
+			 	<!--fileset dir="${web-inf.classes}"/-->
+            </classpath>
+			<exclude name="**/*Test.java"/>
+		</javac>
+	</target>	
+
+	<!-- creates war-file -->
+	<target name="war" depends="build">
+		<echo>Building the war file</echo>
+		<war destfile="${dist.dir}\bpstruct.war" webxml="${web-inf.root}\web.xml">
+			<fileset dir="${build.dir}"/>
+		</war>
+	</target>
+	
+	<!-- copies war-file to tomcat webapplication folder -->
+    <target name="move" depends="war">
+    	<echo> Moving to Tomcat </echo>
+        <copy todir="${deployment.dir}" overwrite="true">
+            <fileset dir="${dist.dir}">
+                <include name="*.war"/>
+            </fileset>
+        </copy>
+    </target>
+	
+	<!-- deletes mashup directory in webapps" -->
+	<target name="deploy" depends="move">
+		<delete dir="${deployment.dir}\bpstruct"/>
+	</target>
+	
+</project>
